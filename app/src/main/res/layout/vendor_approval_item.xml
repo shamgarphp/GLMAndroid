@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/dateLyt"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/label"
+                android:textStyle="bold"
+                android:text="Total Amount "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:id="@+id/totAmt"
+                android:text="866896"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/dateLyt"
+        android:id="@+id/line"
+        android:background="#D3D3D3"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/line"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/stampLyt"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:maxLines="2"
+            android:id="@+id/vendorName"
+            android:text="vendor_name : bggg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:maxLines="2"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/vendorName"
+            android:id="@+id/loc"
+            android:text="location : fykhcbcv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:maxLines="2"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/loc"
+            android:id="@+id/financeCat"
+            android:text="finance_category : sound and lighting"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/stampLyt"
+        android:visibility="gone"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/approved"
+            android:id="@+id/approvedImg"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/reject"
+            android:id="@+id/rejectImg"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

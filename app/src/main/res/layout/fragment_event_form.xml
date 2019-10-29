@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.EventFormFragment"
+    android:background="@color/colorPrimaryDark">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/solid_background_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.016" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/solid_background_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.136" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Subject Aim"
+        android:inputType="text"
+        android:textSize="14sp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.011"
+        android:background="@drawable/solid_background_white"
+        android:paddingStart="20dp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        android:layout_marginBottom="5dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            //events dates
+              <LinearLayout
+                  android:id="@+id/eventdateLayout"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="15dp"
+                  android:visibility="visible">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Event Dates"
+                         android:layout_gravity="center"
+                          android:textSize="16sp"
+                          android:textColor="@color/colorPrimaryDark"
+                          android:textStyle="bold"
+                          android:layout_marginStart="15sp"/>
+
+                      <ImageButton
+                          android:id="@+id/addEventDateColumn"
+                          android:layout_width="50dp"
+                          android:layout_height="50dp"
+                         android:layout_marginStart="200dp"
+                          android:src="@android:drawable/ic_input_add"
+                          android:background="@color/white"/>
+
+                  </LinearLayout>
+
+                  <HorizontalScrollView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:scrollbars="none">
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+
+                         <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                          <TextView
+                              android:layout_width="80dp"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="8dp"
+                              android:layout_marginEnd="8dp"
+                              android:layout_marginStart="8dp"
+                              android:text="Date"
+                              android:textStyle="bold"
+                              android:textColor="#000" />
+                          <TextView
+                              android:layout_width="80dp"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="8dp"
+                              android:layout_marginStart="16dp"
+                              android:text="From Time "
+                              android:textStyle="bold"
+                              android:textColor="#000"
+                              android:gravity="center" />
+                          <TextView
+                              android:layout_width="100dp"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="8dp"
+                              android:layout_marginEnd="8dp"
+                              android:layout_marginStart="8dp"
+                              android:text="Am/pm"
+                              android:textStyle="bold"
+                              android:textColor="#000" />
+
+                          <TextView
+                              android:layout_width="80dp"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="8dp"
+                              android:text="To Time"
+                              android:textStyle="bold"
+                              android:textColor="#000"
+                              android:gravity="center" />
+                          <TextView
+                              android:layout_width="100dp"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="8dp"
+                              android:layout_marginEnd="8dp"
+                              android:layout_marginStart="8dp"
+                              android:text="Am/pm"
+                              android:textStyle="bold"
+                              android:textColor="#000" />
+
+
+                          <TextView
+                              android:layout_width="130dp"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="8dp"
+                              android:layout_marginEnd="8dp"
+                              android:layout_marginStart="8dp"
+                              android:layout_marginTop="5dp"
+                              android:layout_gravity="center"
+                              android:text="Participants type"
+                              android:textStyle="bold"
+                              android:textColor="#000"
+                              android:gravity="center">
+                          </TextView>
+
+                          <TextView
+                              android:layout_width="70dp"
+                              android:layout_height="wrap_content"
+                              android:text="Men"
+                              android:textStyle="bold"
+                              android:textColor="#000"
+                              android:gravity="center"
+                              android:layout_marginTop="2dp"/>
+                          <TextView
+                              android:layout_width="70dp"
+                              android:layout_height="wrap_content"
+                              android:text="Women"
+                              android:textStyle="bold"
+                              android:textColor="#000"
+                              android:gravity="center"
+                              android:layout_marginTop="2dp"/>
+
+                          <TextView
+                              android:layout_width="70dp"
+                              android:layout_height="wrap_content"
+                              android:text="Child"
+                              android:textStyle="bold"
+                              android:textColor="#000"
+                              android:gravity="center"
+                              android:layout_marginTop="2dp"/>
+
+                      </LinearLayout>
+                         <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:id="@+id/parentLinearLayout">
+                     </LinearLayout>
+                      </LinearLayout>
+
+                  </HorizontalScrollView>
+
+              </LinearLayout>
+
+
+                //Finance Layout
+
+               <LinearLayout
+                   android:id="@+id/financeLayout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:visibility="gone">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Finance details"
+                       android:textSize="16sp"
+                       android:textColor="@color/colorPrimaryDark"
+                       android:textStyle="bold"
+                       android:layout_margin="15sp"
+                       android:gravity="center"/>
+
+                   <EditText
+                       android:id="@+id/financeExpenditure"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="10dp"
+                       android:textSize="14sp"
+                       android:hint="Enter Expenditure Description"
+                       android:imeOptions="actionNext"
+                       android:inputType="text"/>
+
+                   <TextView
+                       android:id="@+id/finance_add_one_more_vendor"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                      android:text="Add one more Vendor"
+                       android:background="@drawable/stroke_background_gray"
+                       android:padding="10dp"
+                       android:layout_gravity="end"
+                       android:layout_marginEnd="8dp"
+                       android:textColor="@color/colorPrimaryDark"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Vendor Details"
+                       android:textSize="16sp"
+                       android:textColor="@color/colorPrimaryDark"
+                       android:textStyle="bold"
+                       android:layout_marginStart="15dp"/>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="14sp"
+                       android:text="Company name: "
+                      android:textColor="@android:color/black"
+                       android:layout_margin="5dp"
+                       android:textStyle="bold"/>
+
+                       <EditText
+                           android:id="@+id/financeCompanyname"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textSize="14sp"
+                           android:textColor="@android:color/black"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold"
+                           android:inputType="text"
+                           android:imeOptions="actionNext"/>
+                   </LinearLayout>
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="14sp"
+                           android:text="Location            : "
+                           android:textColor="@android:color/black"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold"/>
+
+                       <EditText
+                           android:id="@+id/financeCompanyLocation"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textSize="14sp"
+                           android:textColor="@android:color/black"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold"
+                           android:inputType="text"
+                           android:imeOptions="actionNext"/>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="14sp"
+                           android:text="Phone                 : "
+                           android:textColor="@android:color/black"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold"/>
+
+                       <EditText
+                           android:id="@+id/financeCompanyPhone"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textSize="14sp"
+                           android:textColor="@android:color/black"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold"
+                           android:inputType="number"
+                           android:imeOptions="actionNext"/>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="14sp"
+                           android:text="Total Amount bidding: "
+                           android:textColor="@android:color/black"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold"/>
+
+                       <EditText
+                           android:id="@+id/financeTotalBidding"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textSize="14sp"
+                           android:textColor="@android:color/black"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold"
+                           android:inputType="numberDecimal"
+                           android:imeOptions="actionNext"/>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="14sp"
+                           android:text="Payment Process: "
+                           android:textColor="@android:color/black"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold" />
+
+                       <Spinner
+                           android:id="@+id/financePaymentProcess"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textColor="@android:color/black"
+                           android:layout_margin="5dp"
+                           android:entries="@array/paymentOptions"/>
+                   </LinearLayout>
+
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="14sp"
+                           android:text="Bank A/c number : "
+                           android:textColor="@android:color/black"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold"/>
+
+                       <EditText
+                           android:id="@+id/financeCompanyBankNum"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textSize="14sp"
+                           android:textColor="@android:color/black"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold"
+                           android:inputType="number"
+                           android:imeOptions="actionNext"/>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="14sp"
+                           android:text="Bank Ifsc code   : "
+                           android:textColor="@android:color/black"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold" />
+
+                       <EditText
+                           android:id="@+id/financeCompanyBankIfsc"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textSize="14sp"
+                           android:textColor="@android:color/black"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold"
+                           android:inputType="text"
+                           android:imeOptions="actionDone"/>
+                   </LinearLayout>
+
+
+
+
+               </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+        <Button
+            android:id="@+id/nextButtomToGoToFinance"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="15sp"
+            android:layout_marginEnd="20dp"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/solid_background_primary" />
+
+        <ImageButton
+            android:id="@+id/finance_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:layout_marginStart="15sp"
+            android:layout_marginBottom="20sp"
+            android:visibility="gone"/>
+
+
+
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

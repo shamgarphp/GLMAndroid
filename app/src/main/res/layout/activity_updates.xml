@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95191c">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                </android.support.v4.view.ViewPager>
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignBottom="@+id/pager"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="70dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:id="@+id/localevents"
+           android:background="@drawable/border"
+           >
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/iconEvent"
+               android:src="@drawable/event"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Local Event"
+               android:textColor="#FFFFFF"
+               android:textSize="16dp"
+               android:layout_toRightOf="@+id/iconEvent"
+               android:layout_centerVertical="true"
+               />
+       </RelativeLayout>
+<RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="70dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+    android:id="@+id/notification"
+           android:background="@drawable/border"
+           >
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/iconNotification"
+               android:src="@drawable/notification"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Notifications"
+               android:textColor="#FFFFFF"
+               android:textSize="16dp"
+               android:layout_toRightOf="@+id/iconNotification"
+               android:layout_centerVertical="true"
+               />
+       </RelativeLayout>
+<RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="70dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+    android:id="@+id/prayer"
+           android:background="@drawable/border"
+           >
+           <ImageView
+               android:layout_width="90dp"
+               android:layout_height="wrap_content"
+               android:id="@+id/iconprayer"
+               android:src="@drawable/prayer"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Prayer Points"
+               android:textColor="#FFFFFF"
+               android:textSize="16dp"
+               android:layout_toRightOf="@+id/iconprayer"
+               android:layout_centerVertical="true"
+               />
+       </RelativeLayout>
+
+   </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.VbsFinanceReport">
+
+    <Spinner
+        android:id="@+id/financeReportSpinner"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_margin="15sp">
+    </Spinner>
+    <TextView
+        android:id="@+id/financeGetDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/financeReportSpinner"
+        android:text="Get Details"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:background="@drawable/green_round_background"
+        android:textColor="@color/white"
+        android:paddingStart="15sp"
+        android:paddingEnd="15sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="15sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/financeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/financeReportSpinner"
+        android:layout_marginTop="5dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

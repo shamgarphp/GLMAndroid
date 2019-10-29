@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_below="@+id/eventdateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/participaintDate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Select Date"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <Spinner
+        android:id="@+id/participaintsSpinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/participaintsName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:hint="optional"
+        android:gravity="center">
+    </EditText>
+
+    <EditText
+        android:id="@+id/participaintsPhone"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:hint="optional"
+        android:gravity="center">
+    </EditText>
+
+    <EditText
+        android:id="@+id/participaintsDescription"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:hint="optional"
+        android:gravity="center">
+    </EditText>
+
+    <EditText
+        android:id="@+id/num_men"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/num_women"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/num_child"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/delete_button_participaints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete"
+        android:background="@color/white"
+        android:layout_marginStart="5dp"/>
+</LinearLayout>

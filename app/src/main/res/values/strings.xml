@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">GoodLife</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string-array name="time">
+        <item>am</item>
+        <item>pm</item>
+    </string-array>
+
+    <string name="day_prompt">Select</string>
+
+    <string-array name="spinner_title">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="timeHours">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="paymentOptions">
+        <item>Cheque</item>
+        <item>Cash</item>
+        <item>Online</item>
+    </string-array>
+
+    <string name="Programs">VBS</string>
+
+    <string name="upload_video">UPLOAD VIDEO</string>
+    <string name="read_file">This app needs access to your file storage so that it can read video.</string>
+
+<!--    https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted -->
+    <string name="places_api_key">AIzaSyCKWcTivXnvmWkik7YXrHoHedLL4N2UCCw</string>
+    <string name="login_preference">com.example.sss.goodlife.Utils.login_preference</string>
+</resources>
